@@ -18,11 +18,18 @@ if (numOfGrid > 100) {
     location.reload()
 }
 
+function resetGrid() {
+    for (let i = 0; i < numOfGrid**2; i++) {
+        divContainer.innerHTML = ""
+    }
+    setupGrid(numOfGrid,dimensionPerEach)
+}
+
 
 areaPerEach = (totalAreaAvail)/ (numOfGrid*numOfGrid)
 dimensionPerEach = areaPerEach**(1/2)
 
-let currentMode = "clear";
+let currentMode = "classic";
 
 function setupGrid(gridSize,dimensions) {
     for (let i = 0; i < gridSize**2; i++) {
@@ -57,10 +64,8 @@ reloadPage.addEventListener("click", ()=> {
 const resetPage = document.getElementById("resetPage")
 
 resetPage.addEventListener("click", ()=> {
-    for (let i = 0; i < numOfGrid**2; i++) {
-        divContainer.innerHTML = ""
-    }
-    setupGrid(numOfGrid,dimensionPerEach)
+    resetGrid()
 })
 
 setupGrid(numOfGrid,dimensionPerEach)
+
