@@ -1,0 +1,48 @@
+body {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vh;
+    margin: 0;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    background: #15191D;
+    width: 20vh;
+    color: #F9F5FF;
+    align-items: center;
+    gap: 5vh;
+    padding-top: 1vh;
+}
+
+.logoArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+button {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 3vh;
+    padding: 1vh;
+    border-radius: 1vh;
+    color: #15191D;
+    cursor: pointer;
+}
+
+.main {
+    flex: 1;
+    background-color: #F9F5FF;
+}

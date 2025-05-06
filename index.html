@@ -4,8 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-A-Sketch</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="sidebar">
+        <div class="logoArea">
+            <img src="imgs/logo.png" alt="pen and paintbruh" srcset="" style="height: 10vh; width: 10vh; border-radius: 1vh;">
+            <div class="logo-text" style="font-size: 2vh;">Sketch Away!</div>
+        </div>
+        <div class="buttons" style="display: flex; flex-direction: column;">
+            <button class="calssic">Classic</button>
+            <button class="rainbow">Rainbow</button>
+            <button class="greyscale">Shading</button>
+            <button class="pick-a-color">Eraser</button>
+            <button class="clear">Clear</button>
+        </div>
+    </div>
+    <div class="main"></div>
 </body>
 </html>
