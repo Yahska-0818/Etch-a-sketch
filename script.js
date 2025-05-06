@@ -5,9 +5,7 @@ function getRandomNumber(min, max) {
 }
 
 function resetGrid() {
-    for (let i = 0; i < numOfGrid**2; i++) {
-        divContainer.innerHTML = ""
-    }
+    divContainer.innerHTML = ""
     setupGrid(numOfGrid,dimensionPerEach)
 }
 
@@ -94,8 +92,8 @@ if (numOfGrid > 100) {
     location.reload()
 }
 
-areaPerEach = (totalAreaAvail)/ (numOfGrid*numOfGrid)
-dimensionPerEach = areaPerEach**(1/2)
+let areaPerEach = (totalAreaAvail)/ (numOfGrid*numOfGrid)
+let dimensionPerEach = areaPerEach**(1/2)
 
 classic.onclick = () => setCurrentMode("classic")
 rainbow.onclick = () => setCurrentMode("rainbow")
