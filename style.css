@@ -73,3 +73,8 @@ body {
     flex-wrap: wrap;
     border: 3px solid #998FC7;
 }
+
+.activeMode {
+    background-color: #15191D;
+    color: #F9F5FF;
+}
