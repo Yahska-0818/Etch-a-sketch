@@ -43,6 +43,11 @@ body {
     background-color: #F9F5FF;
     cursor: pointer;
     border: 3px solid #998FC7;
+    transition: transform 400ms;
+}
+
+.select:hover {
+    transform: scale(1.1);
 }
 
 .main {
