@@ -29,7 +29,7 @@ function resetGrid() {
 areaPerEach = (totalAreaAvail)/ (numOfGrid*numOfGrid)
 dimensionPerEach = areaPerEach**(1/2)
 
-let currentMode = "classic";
+let currentMode = "rainbow";
 
 function setupGrid(gridSize,dimensions) {
     for (let i = 0; i < gridSize**2; i++) {
