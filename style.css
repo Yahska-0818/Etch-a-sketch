@@ -15,28 +15,29 @@ body {
     width: 20vh;
     color: #F9F5FF;
     align-items: center;
-    gap: 5vh;
-    padding-top: 1vh;
+    padding: 0vh 2vh;
 }
 
 .logoArea {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 1vh;
 }
 
 .buttons {
     display: flex;
     flex-direction: column;
     gap: 3vh;
+    margin-top: 14vh;
 }
 
-button {
+.select {
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    font-size: 3vh;
-    padding: 1vh;
+    font-size: 2.5vh;
+    padding: 1.5vh;
     border-radius: 1vh;
     color: #15191D;
     cursor: pointer;
@@ -45,4 +46,23 @@ button {
 .main {
     flex: 1;
     background-color: #F9F5FF;
+    display: flex;
+    flex-direction: column;
+}
+
+.activityArea {
+    flex: 1;
+    background-color: #E0D9F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #F9F5FF;
+    height: 75vh;
+    width: 75vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
